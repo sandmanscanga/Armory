@@ -200,7 +200,7 @@ if [ -f /etc/zsh_command_not_found ]; then
 fi
 
 # Custom Alias Overrides
-alias ls='lsd'
+alias ls='lsd --color always --icon always --icon-theme unicode'
 alias l='ls -F'
 alias ll='ls -l'
 alias la='ls -a'
