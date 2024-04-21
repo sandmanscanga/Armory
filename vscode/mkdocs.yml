@@ -1,0 +1,9 @@
+site_name: Example Project
+site_author: Adam Scanga
+site_description: A short description of my project.
+theme:
+  name: readthedocs
+  locale: en
+nav:
+  - Home: index.md
+  - Credits: mkdocs.md
