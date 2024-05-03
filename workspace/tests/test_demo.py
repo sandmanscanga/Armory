@@ -7,9 +7,7 @@ Summary:
 
 """
 
-import pytest
 from demo import check_version
-from dotenv import load_dotenv
 
 
 def test_check_version() -> None:
@@ -23,9 +21,7 @@ def test_check_version() -> None:
 
     """
 
-    version = check_version.get_version()
-
-    pytest.assume(version == "0.1.0")
+    assert check_version.get_version() == "0.1.0"
 
 
 if __name__ == "__main__":

@@ -8,9 +8,7 @@
     "files.exclude": {
       "**/__pycache__": true,
       "**/.mypy_cache": true,
-      "**/.idea": true,
-      "**/.venv": true,
-      "**/.cspell": true
+      "**/.idea": true
     },
     "black-formatter.importStrategy": "fromEnvironment",
     "black-formatter.args": [

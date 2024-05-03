@@ -1,3 +1,0 @@
-PROJECT_PATH=C:/Users/adams/Development/Misc
-VENV_PATH=${PROJECT_PATH}/.venv
-PYTHONPATH=${PROJECT_PATH}
