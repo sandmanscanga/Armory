@@ -43,9 +43,8 @@
 '
 
 # Setting system locale
-export LANG=en_US.UTF-8
-export LANGUAGE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+export LANG="en_US.UTF-8"
+export LANGUAGE="en_US:en"
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -66,7 +65,7 @@ export ZSH_THEME_RANDOM_QUIET=true
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "fino" "jnrowe" "amuse" "suvash" )
+#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "fino" "jnrowe" "amuse" "suvash" "half-life" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
