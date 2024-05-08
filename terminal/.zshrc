@@ -42,8 +42,13 @@
 
 '
 
+# Setting system locale
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -53,9 +58,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-#ZSH_THEME="fino"
-#ZSH_THEME="jnrowe"
-#ZSH_THEME="amuse"
 ZSH_THEME="random"
 export ZSH_THEME_RANDOM_QUIET=true
 
@@ -64,7 +66,7 @@ export ZSH_THEME_RANDOM_QUIET=true
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "fino" "jnrowe" "amuse" )
+#ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "fino" "jnrowe" "amuse" "suvash" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -92,7 +94,7 @@ zstyle ':omz:update' frequency 7
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -121,7 +123,7 @@ zstyle ':omz:update' frequency 7
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages colorize command-not-found dotenv git pep8 pylint python rand-quote sudo virtualenv vscode z)
+plugins=(colored-man-pages colorize command-not-found dotenv git pep8 pylint python sudo virtualenv vscode z)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -245,11 +247,6 @@ alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
 alias lt='ls --tree -I .git -I __pycache__ -I venv -I .venv -I Venvs'
-
-# Add $HOME/bin to PATH if it's not already included
-if [[ ":$PATH:" != *":$HOME/bin:"* ]]; then
-    export PATH="$HOME/bin:$PATH"
-fi
 
 # Check if ipython is in PATH
 if command -v ipython &>/dev/null; then
