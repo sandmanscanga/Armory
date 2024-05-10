@@ -11,6 +11,8 @@
 ## Ubuntu 22.04
 # sudo apt -y install zsh zsh-syntax-highlighting zsh-autosuggestions chroma vim-syntastic sparse splint cppcheck libxml2-utils hlint tidy checkstyle libperl-critic-perl puppet-lint pep8 pylint shellcheck flake8 pyflakes3 pylama python3-flake8 python3-pyflakes python3-pylama python3-stemmer cl-closure-common python3-pygments python3-sphinx golang-chroma golang-github-alecthomas-chroma-dev python-django-debug-toolbar-doc python-pygments-doc python3-colored-traceback python3-django-debug-toolbar python3-jupyterlab-pygments python3-typeshed rubber ruby-github-linguist ruby-pygments.rb ruby-rouge ruby-rugments texlive-latex-extra colorize git dotenv pylint python3-pip python3-virtualenv virtualenv libsqlite3-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev tk-dev liblzma-dev ant screenfetch jq htop tree vim curl wget git tmux
 
+# sudo locale-gen en_US.UTF-8
+
 # git clone https://github.com/tmux-plugins/tmux-logging.git /opt/tmux-logging
 
 # mkdir "$HOME/.lscolors"
