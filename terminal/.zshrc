@@ -5,8 +5,26 @@
 
 '
 
-## Amazon Linux 2023 / Cent OS 7
-# sudo yum install -y alsa-lib amazon-linux-repo-s3 annobin-docs annobin-plugin-gcc ant ant-lib bzip2-devel cairo cpp cronie cronie-anacron curl-minimal dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts expat fontconfig fonts-filesystem freetype gc gcc giflib git git-core git-core-doc glibc glibc-all-langpacks glibc-common glibc-devel glibc-gconv-extra glibc-headers-x86 glibc-locale-source gnupg2 gnupg2-smime google-noto-fonts-common google-noto-sans-vf-fonts graphite2 grub2-common grub2-efi-x64-ec2 grub2-pc-modules grub2-tools grub2-tools-minimal guile22 harfbuzz htop java-17-amazon-corretto-headless java-22-amazon-corretto java-22-amazon-corretto-devel java-22-amazon-corretto-headless javapackages-filesystem javapackages-tools kernel kernel-headers kernel-livepatch-repo-s3 kernel-tools krb5-libs langpacks-core-font-en libICE libSM libX11 libX11-common libXau libXext libXi libXinerama libXrandr libXrender libXt libXtst libblkid libbrotli libcurl-minimal libfdisk libffi-devel libjpeg-turbo libksba libmount libmpc libnsl libpng libsecret libsmartcols libtool-ltdl libusbx libuuid libxcb libxcrypt-compat libxcrypt-devel make mpdecimal ncurses-c++-libs ncurses-devel openssl-devel pcsc-lite pcsc-lite-ccid pcsc-lite-libs perl-Error perl-File-Find perl-Git perl-TermReadKey perl-lib pinentry pinentry-tty pixman polkit polkit-libs polkit-pkla-compat python-unversioned-command python3-pip python3.11 python3.11-libs python3.11-pip python3.11-pip-wheel python3.11-setuptools python3.11-setuptools-wheel readline-devel selinux-policy selinux-policy-targeted sqlite sqlite-devel system-release tmux util-linux util-linux-core xml-common xz-devel zlib-devel zsh
+## Cent OS 7
+# yum install -y alsa-lib amazon-linux-repo-s3 annobin-docs annobin-plugin-gcc ant ant-lib bzip2-devel cairo cpp cronie cronie-anacron curl-minimal dejavu-sans-fonts dejavu-sans-mono-fonts dejavu-serif-fonts expat fontconfig fonts-filesystem freetype gc gcc giflib git git-core git-core-doc glibc glibc-all-langpacks glibc-common glibc-devel glibc-gconv-extra glibc-headers-x86 glibc-locale-source gnupg2 gnupg2-smime google-noto-fonts-common google-noto-sans-vf-fonts graphite2 grub2-common grub2-efi-x64-ec2 grub2-pc-modules grub2-tools grub2-tools-minimal guile22 harfbuzz htop java-17-amazon-corretto-headless java-22-amazon-corretto java-22-amazon-corretto-devel java-22-amazon-corretto-headless javapackages-filesystem javapackages-tools kernel kernel-headers kernel-livepatch-repo-s3 kernel-tools krb5-libs langpacks-core-font-en libICE libSM libX11 libX11-common libXau libXext libXi libXinerama libXrandr libXrender libXt libXtst libblkid libbrotli libcurl-minimal libfdisk libffi-devel libjpeg-turbo libksba libmount libmpc libnsl libpng libsecret libsmartcols libtool-ltdl libusbx libuuid libxcb libxcrypt-compat libxcrypt-devel make mpdecimal ncurses-c++-libs ncurses-devel openssl-devel pcsc-lite pcsc-lite-ccid pcsc-lite-libs perl-Error perl-File-Find perl-Git perl-TermReadKey perl-lib pinentry pinentry-tty pixman polkit polkit-libs polkit-pkla-compat python-unversioned-command python3-pip python3.11 python3.11-libs python3.11-pip python3.11-pip-wheel python3.11-setuptools python3.11-setuptools-wheel readline-devel selinux-policy selinux-policy-targeted sqlite sqlite-devel system-release tmux util-linux util-linux-core xml-common xz-devel zlib-devel zsh
+
+## Amazon Linux 2023
+# dnf install -y dnf-utils bind-utils wget curl git tree htop jq vim tmux p7zip gnupg2 pinentry util-linux-user glibc-langpack-en glibc glibc-devel gcc g++ readline readline-devel openssl openssl-devel bzip2 bzip2-devel zlib zlib-devel sqlite sqlite-devel xz xz-devel libffi libffi-devel --allowerasing
+
+# localedef -i en_US -f UTF-8 en_US.UTF-8
+# export LANG='en_US.UTF-8'
+# export LANGUAGE='en_US:en'
+
+# git clone https://github.com/KittyKatt/screenFetch.git
+# cd screenFetch
+# chmod +x screenFetch/screenfetch-dev
+# mv screenFetch/screenfetch-dev ~/bin/screenfetch
+# rm -rf screenFetch
+
+# alias 7z='7za'
+# echo "alias 7z='7za'" >> ~/.zshrc
+
+##########################################
 
 ## Ubuntu 22.04
 # sudo apt -y install zsh zsh-syntax-highlighting zsh-autosuggestions chroma vim-syntastic sparse splint cppcheck libxml2-utils hlint tidy checkstyle libperl-critic-perl puppet-lint pep8 pylint shellcheck flake8 pyflakes3 pylama python3-flake8 python3-pyflakes python3-pylama python3-stemmer cl-closure-common python3-pygments python3-sphinx golang-chroma golang-github-alecthomas-chroma-dev python-django-debug-toolbar-doc python-pygments-doc python3-colored-traceback python3-django-debug-toolbar python3-jupyterlab-pygments python3-typeshed rubber ruby-github-linguist ruby-pygments.rb ruby-rouge ruby-rugments texlive-latex-extra colorize git dotenv pylint python3-pip python3-virtualenv virtualenv libsqlite3-dev libssl-dev zlib1g-dev libbz2-dev libreadline-dev tk-dev liblzma-dev ant screenfetch jq htop tree vim curl wget git tmux
@@ -27,13 +45,13 @@
 
 # curl https://pyenv.run | bash
 
-#~ export PYENV_ROOT="$HOME/.pyenv"
-#~ [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-#~ eval "$(pyenv init -)"
-#~ eval "$(pyenv virtualenv-init -)"
+# export PYENV_ROOT="$HOME/.pyenv"
+# [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
-# pyenv install 3.11.9
-# pyenv global 3.11.9
+# pyenv install $(pyenv latest -k 3)
+# pyenv global $(pyenv latest -k 3)
 
 : '
 
@@ -95,7 +113,7 @@ zstyle ':omz:update' frequency 7
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -162,7 +180,7 @@ source $ZSH/oh-my-zsh.sh
 '
 
 # override default virtualenv indicator in prompt
-VIRTUAL_ENV_DISABLE_PROMPT=1
+#VIRTUAL_ENV_DISABLE_PROMPT=1
 
 # enable syntax-highlighting
 if [ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
@@ -234,21 +252,6 @@ fi
 
 '
 
-# Check for Oh My Zsh installation and Zsh availability
-if [ -z "$ZSH" ] || [ ! -d "$ZSH" ]; then
-    echo "Oh My Zsh is not installed or ZSH variable is not set. Please install Oh My Zsh and retry." >&2
-else
-    source ~/bin/swap-theme/runner.sh
-fi
-
-# Custom Alias Overrides
-alias ls='lsd --color always --icon always --icon-theme fancy'
-alias l='ls -F'
-alias ll='ls -l'
-alias la='ls -a'
-alias lla='ls -la'
-alias lt='ls --tree -I .git -I __pycache__ -I venv -I .venv -I Venvs'
-
 # Check if ipython is in PATH
 if command -v ipython &>/dev/null; then
     # Check if ipdb is importable in Python
@@ -270,5 +273,21 @@ eval "$(pyenv virtualenv-init -)"
 # Custom LS_COLORS
 source $HOME/.lscolors/lscolors.sh
 
+# Check for Oh My Zsh installation and Zsh availability
+if [ -z "$ZSH" ] || [ ! -d "$ZSH" ]; then
+    echo "Oh My Zsh is not installed or ZSH variable is not set. Please install Oh My Zsh and retry." >&2
+else
+    source ~/bin/swap-theme/runner.sh
+fi
+
+# Custom Alias Overrides
+alias ls='lsd --color always --icon always --icon-theme fancy'
+alias l='ls -F'
+alias ll='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree -I .git -I __pycache__ -I venv -I .venv -I Venvs'
+
 # Custom Greeting
+clear
 screenfetch
