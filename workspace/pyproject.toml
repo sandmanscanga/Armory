@@ -34,20 +34,13 @@ packages = [{ include = "demo", from = "." }]
 
 include = ["tests/", "pyproject.toml", "README.md"]
 
-exclude = [
-    "**/__pycache__/",
-    "**/*.pyc",
-    "build/",
-    "dist/",
-    "venv/",
-    ".env"
-]
+exclude = ["**/__pycache__/", "**/*.pyc", "build/", "dist/", "venv/", ".env"]
 
 [tool.poetry.scripts]
 run_unit_tests = "demo.scripts.run_unit_tests:main"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.12"
 requests = "^2.31.0"
 beautifulsoup4 = "^4.12.3"
 
